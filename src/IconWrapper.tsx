@@ -1,5 +1,5 @@
 import * as React from "react";
-import { IconProps } from "../types";
+import { IconProps } from "./types";
 
 export const IconWrapper: React.FC<{ icon: React.ReactNode } & IconProps> = ({
   icon,

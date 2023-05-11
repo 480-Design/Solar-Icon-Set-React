@@ -18,7 +18,7 @@ export { default as FloorLamp } from "./FloorLamp";
 export { default as FloorLampMinimalistic } from "./FloorLampMinimalistic";
 export { default as Fridge } from "./Fridge";
 export { default as Lamp } from "./Lamp";
-export { default as Mirror } from "./Mirror";
+export { default as HomeFurnitureMirror } from "./Mirror";
 export { default as RemoteController } from "./RemoteController";
 export { default as RemoteController2 } from "./RemoteController2";
 export { default as RemoteControllerMinimalistic } from "./RemoteControllerMinimalistic";

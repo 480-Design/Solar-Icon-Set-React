@@ -5,8 +5,12 @@ import os from "os";
 import * as Figma from "figma-api";
 import axios from "axios";
 import { transform } from "@svgr/core";
+import * as fs from "fs-extra";
 
 const icoDir = resolve(__dirname, "./icons");
+//clear dir before
+fs.emptyDirSync(icoDir);
+
 dotenv.config();
 const { token, fileId } = process.env;
 
@@ -137,7 +141,7 @@ const createIndex = ({
         icons[c][n];
       writeFileSync(
         resolve(dir, `${n}.tsx`),
-        `import * as React from 'react'; import { IconProps } from '../../types'; import { IconWrapper } from '../IconWrapper'; const ${n} = (allProps: IconProps) => { const { svgProps: props, iconStyle, ...restProps } = allProps; const styles: { [style: string]: React.ReactNode } = { Broken: ${Broken}, LineDuotone: ${LineDuotone}, Linear: ${Linear}, Outline: ${Outline}, Bold: ${Bold}, BoldDuotone: ${BoldDuotone} }; return <IconWrapper icon={styles[iconStyle || 'Linear']} {...restProps} /> }; export default ${n}`
+        `import * as React from 'react'; import { IconProps } from '../../types'; import { IconWrapper } from '../../IconWrapper'; const ${n} = (allProps: IconProps) => { const { svgProps: props, iconStyle, ...restProps } = allProps; const styles: { [style: string]: React.ReactNode } = { Broken: ${Broken}, LineDuotone: ${LineDuotone}, Linear: ${Linear}, Outline: ${Outline}, Bold: ${Bold}, BoldDuotone: ${BoldDuotone} }; return <IconWrapper icon={styles[iconStyle || 'Linear']} {...restProps} /> }; export default ${n}`
       );
     });
     createIndex({ dir, indexFileName: "index.tsx" });

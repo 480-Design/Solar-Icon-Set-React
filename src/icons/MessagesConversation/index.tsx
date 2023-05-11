@@ -19,7 +19,7 @@ export { default as ChatUnread } from "./ChatUnread";
 export { default as CheckRead } from "./CheckRead";
 export { default as Dialog } from "./Dialog";
 export { default as Dialog2 } from "./Dialog2";
-export { default as ForwardRight } from "./ForwardRight";
+export { default as Forward } from "./Forward";
 export { default as Inbox } from "./Inbox";
 export { default as InboxArchive } from "./InboxArchive";
 export { default as InboxIn } from "./InboxIn";

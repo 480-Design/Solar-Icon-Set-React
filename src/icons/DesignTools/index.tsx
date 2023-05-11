@@ -1,6 +1,6 @@
 export { default as AlignBottom } from "./AlignBottom";
-export { default as AlignHorizontalCenter } from "./AlignHorizontalCenter";
 export { default as AlignHorizontaSpacing } from "./AlignHorizontaSpacing";
+export { default as AlignHorizontalCenter } from "./AlignHorizontalCenter";
 export { default as AlignLeft } from "./AlignLeft";
 export { default as AlignRight } from "./AlignRight";
 export { default as AlignTop } from "./AlignTop";

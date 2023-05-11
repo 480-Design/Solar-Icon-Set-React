@@ -1,8 +1,7 @@
+export { default as ListBill } from "./Bill";
 export { default as Checklist } from "./Checklist";
 export { default as ChecklistMinimalistic } from "./ChecklistMinimalistic";
 export { default as List } from "./List";
-export { default as List2 } from "./List2";
-export { default as List3 } from "./List3";
 export { default as ListArrowDown } from "./ListArrowDown";
 export { default as ListArrowDownMinimalistic } from "./ListArrowDownMinimalistic";
 export { default as ListArrowUp } from "./ListArrowUp";

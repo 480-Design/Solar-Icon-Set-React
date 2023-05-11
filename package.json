@@ -1,6 +1,6 @@
 {
   "name": "solar-icon-set",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Solar Icon Set in react",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -184,17 +184,19 @@
     "url": "https://github.com/480-Design/Solar-Icon-Set/issues"
   },
   "homepage": "https://github.com/480-Design/Solar-Icon-Set#readme",
-  "dependencies": {
-    "@svgr/core": "^6.5.1",
-    "@svgr/plugin-jsx": "^6.5.1",
-    "@svgr/plugin-svgo": "^6.5.1",
-    "@types/node": "^18.11.9",
-    "@types/react": "^18.0.25",
-    "axios": "^1.1.3",
+  "devDependencies": {
+    "@svgr/core": "^8.0.0",
+    "@svgr/plugin-jsx": "^8.0.1",
+    "@svgr/plugin-svgo": "^8.0.1",
+    "@types/fs-extra": "^11.0.1",
+    "@types/node": "^20.1.2",
+    "@types/react": "^18.2.6",
+    "axios": "^1.4.0",
     "dotenv": "^16.0.3",
     "figma-api": "^1.11.0",
+    "fs-extra": "^11.1.1",
     "react": "^18.2.0",
     "ts-node": "^10.9.1",
-    "typescript": "^4.9.3"
+    "typescript": "^5.0.4"
   }
 }
